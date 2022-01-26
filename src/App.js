@@ -113,12 +113,12 @@ const App = () => {
         onHide={() => toggleSettingsModal(false)} />
 
       <div className="row text-center mt-5">
-        <h1><img src="/assets/logo.svg" alt="logo" /></h1>
+        <h1><img src={process.env.PUBLIC_URL + "/assets/logo.svg"} /></h1>
       </div>
 
       <div className="row mt-5">
         <div className="col-md-6 mx-auto text-center">
-          <div className="btn-group btn-container p-2 rounded-pill" role="group" aria-label="Basic example">
+          <div className="btn-group btn-container p-2 rounded-pill">
             <button
               onClick={() => handleModeChange(MODE_POMODORO)}
               type="button"
@@ -148,8 +148,8 @@ const App = () => {
 
       <div className="row mb-5">
         <div className="col-md-6 mx-auto text-center">
-          <button onClick={() => toggleSettingsModal(true)} type="button" className="btn bg-none">
-            <img src="/assets/icon-settings.svg" alt="settings" />
+          <button onClick={() => toggleSettingsModal(true)} type="button" className="settings-btn btn bg-none">
+            <i className="bi bi-gear-fill text-muted"></i>
           </button>
         </div>
       </div>

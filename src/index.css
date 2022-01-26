@@ -56,6 +56,10 @@ code {
   letter-spacing: 15px;
 }
 
+.settings-btn {
+  font-size: 2rem;
+}
+
 .modal-content {
   border-radius: 25px;
 }

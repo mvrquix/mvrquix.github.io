@@ -134,21 +134,21 @@ const SettingsModal = ({ show, settings, onUpdate, onHide }) => {
                                 type="button"
                                 className="btn timer-setting-btn"
                                 style={{ background: COLOR_ONE }}>
-                                {isValueSelected('selectedColor', COLOR_ONE) && (<img src="/assets/icon-check.svg" className="checkmark" alt="checked" />)}
+                                {isValueSelected('selectedColor', COLOR_ONE) && (<i className="bi bi-check-lg"></i>)}
                             </button>
                             <button
                                 onClick={() => handleValueChange('selectedColor', COLOR_TWO)}
                                 type="button"
                                 className="btn timer-setting-btn mx-2"
                                 style={{ background: COLOR_TWO }}>
-                                {isValueSelected('selectedColor', COLOR_TWO) && (<img src="/assets/icon-check.svg" className="checkmark" alt="checked" />)}
+                                {isValueSelected('selectedColor', COLOR_TWO) && (<i className="bi bi-check-lg"></i>)}
                             </button>
                             <button
                                 onClick={() => handleValueChange('selectedColor', COLOR_THREE)}
                                 type="button"
                                 className="btn timer-setting-btn"
                                 style={{ background: COLOR_THREE }}>
-                                {isValueSelected('selectedColor', COLOR_THREE) && (<img src="/assets/icon-check.svg" className="checkmark" alt="checked" />)}
+                                {isValueSelected('selectedColor', COLOR_THREE) && (<i className="bi bi-check-lg"></i>)}
                             </button>
                         </div>
                     </div>
